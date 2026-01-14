@@ -1,0 +1,36 @@
+/* Lightbox 說明文字整體區塊 */
+.lb-data .lb-caption{
+  font-size:14px;
+  line-height:1.1em;
+  color:#ddd;
+  padding-top:8px;
+  max-width:900px;
+  margin:0 auto;
+  text-align:left;
+}
+
+/* 標題 */
+.lb-title{
+  display:block;
+  font-size:1.2em;
+  font-weight:bold;
+  color:#edd235;
+  padding-bottom: 10px;
+}
+
+/* 每一列左側標籤 */
+.lb-label{
+  color:#a7f4e6;          /* 淡紫色，呼應你畫廊風格 */
+  /* font-weight:600; */
+  margin-right:4px;
+}
+
+/* 每一列右側內容 */
+.lb-text{
+  color:#e0e0e0;
+}
+
+/* 讓每一列更有層次感（選擇性） */
+.lb-data .lb-caption br{
+  /* line-height:1.9; */
+}
