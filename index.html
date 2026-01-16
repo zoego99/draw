@@ -1,14 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="zh-Hant">
+
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>各畫風一覽表｜總覽</title>
-  <link rel="stylesheet" href="./assets/style.css" />
-
+  <link href="./assets/style.css" rel="stylesheet" />
   <!-- Lightbox2（CDN） -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" />
-  <link rel="stylesheet" href="./assets/lightbox.css">
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
+  <link href="./assets/lightbox.css" rel="stylesheet" />
+  <style data-added="card-link">
+    /* added: allow image to be clickable while caption text remains selectable */
+    .card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ensure caption can be selected */
+    .cap {
+      user-select: text;
+    }
+  </style>
 </head>
 
 <body>
@@ -28,7 +42,6 @@
       </div>
     </div>
   </div>
-
   <!-- 上方大區塊（如附圖1 上半部留空區） -->
   <section class="hero">
     <div class="container">
@@ -38,177 +51,164 @@
           在 AI 生圖過程中，使用正確的「風格關鍵詞（Style Keywords）」是決定產出是否符合預期的關鍵的參考圖集！
         </p>
       </div>
-
-<div class="section-line"></div>
-        <h2>一、主項 > 細項</h2>
-
+      <div class="section-line"></div>
+      <h2>一、主項 > 細項</h2>
       <!-- 相簿入口（如附圖1 下半部 2 排方塊的概念，可自行增減） -->
-        <div class="album-grid">
-            <a class="album" href="./pages/gallery-a.html">
-            <img class="cover" src="./images/a1.jpg" alt="A. 寫實攝影與寫實渲染">
-            <div class="info">
-                <p class="title">A. 寫實攝影與寫實渲染</p>
-                <p class="desc">產品圖、建築視覺、城市景觀、動物、人像、廣告視覺、品牌形象、寫實情境模擬。</p>
-            </div>
-            </a>
+      <div class="album-grid">
 
-            <a class="album" href="./pages/gallery-b.html">
-            <img class="cover" src="./images/b1.jpg" alt="B. 3D 與立體渲染">
-            <div class="info">
-                <p class="title">B. 3D 與立體渲染</p>
-                <p class="desc">點我進入，查看 B 的作品並可放大瀏覽。</p>
-            </div>
-            </a>
-            <a class="album" href="./pages/gallery-c.html">
-            <img class="cover" src="./images/c1.jpg" alt="C. 動漫與漫畫">
-            <div class="info">
-                <p class="title">C. 動漫與漫畫</p>
-                <p class="desc">點我進入，查看 B 的作品並可放大瀏覽。</p>
-            </div>
-            </a>
-
-            <a class="album" href="./pages/gallery-d.html">
-            <img class="cover" src="./images/d1.jpg" alt="D. 插畫與平面設計">
-            <div class="info">
-                <p class="title">D. 插畫與平面設計</p>
-                <p class="desc">點我進入，查看 C 的作品並可放大瀏覽。</p>
-            </div>
-            </a>
-            <a class="album" href="./pages/gallery-e.html">
-            <img class="cover" src="./images/e1.jpg" alt="E. 繪本與手繪質感">
-            <div class="info">
-                <p class="title">E. 繪本與手繪質感</p>
-                <p class="desc">點我進入，查看 C 的作品並可放大瀏覽。</p>
-            </div>
-            </a>
-            <a class="album" href="./pages/gallery-f.html">
-            <img class="cover" src="./images/f1.jpg" alt="F. 傳統與文化藝術">
-            <div class="info">
-                <p class="title">F. 傳統與文化藝術</p>
-                <p class="desc">點我進入，查看 C 的作品並可放大瀏覽。</p>
-            </div>
-            </a>
+        <div class="album">
+          <a class="album-link" href="./pages/gallery-a.html">
+            <img alt="A. 寫實攝影與寫實渲染" class="cover" src="./images/a1.jpg" />
+          </a>
+          <div class="info">
+            <p class="title">A. 寫實攝影與寫實渲染</p>
+            <p class="desc">追求「像照片一樣真實」，產品圖、建築視覺、城市景觀、動物、人像、廣告視覺、品牌形象、寫實情境模擬。</p>
+          </div>
         </div>
 
-<div class="section-line"></div>
-        <h2 id="section2">二、其他</h2>
+        <div class="album">
+          <a class="album-link" href="./pages/gallery-b.html">
+            <img alt="B. 3D 與立體渲染" class="cover" src="./images/b1.jpg" />
+          </a>
+          <div class="info">
+            <p class="title">B. 3D 與立體渲染</p>
+            <p class="desc">以立體模型與光影渲染為主，IP 角色、公仔設計、品牌 Mascot、動畫視覺、3D 頭像、產品 3D 模型。</p>
+          </div>
+        </div>
+
+        <div class="album">
+          <a class="album-link" href="./pages/gallery-c.html">
+            <img alt="C. 動漫與漫畫" class="cover" src="./images/c1.jpg" />
+          </a>
+          <div class="info">
+            <p class="title">C. 動漫與漫畫</p>
+            <p class="desc">以線條、分鏡、角色表情為主，常見日系、韓系、美式漫畫，風格從可愛到寫實皆有。</p>
+          </div>
+        </div>
+
+        <div class="album">
+          <a class="album-link" href="./pages/gallery-d.html">
+            <img alt="D. 插畫與平面設計" class="cover" src="./images/d1.jpg" />
+          </a>
+          <div class="info">
+            <p class="title">D. 插畫與平面設計</p>
+            <p class="desc">扁平、資訊清楚、構圖乾淨，適合商業與教學，適合簡報、網站、貼圖、教學圖解。</p>
+          </div>
+        </div>
+
+        <div class="album">
+          <a class="album-link" href="./pages/gallery-e.html">
+            <img alt="E. 繪本與手繪質感" class="cover" src="./images/e1.jpg" />
+          </a>
+          <div class="info">
+            <p class="title">E. 繪本與手繪質感</p>
+            <p class="desc">溫暖、有紙感與筆觸，重情緒與故事感，用於繪本、療癒插畫、親子教材。</p>
+          </div>
+        </div>
+
+        <div class="album">
+          <a class="album-link" href="./pages/gallery-f.html">
+            <img alt="F. 傳統與文化藝術" class="cover" src="./images/f1.jpg" />
+          </a>
+          <div class="info">
+            <p class="title">F. 傳統與文化藝術</p>
+            <p class="desc">古風封面、文化品牌、藝術創作。</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="section-line"></div>
+      <h2 id="section2">二、其他</h2>
       <div class="album-grid">
         <!-- 一張圖 = 一個卡片 -->
-        <a class="card"
-            href="../images/g1.jpg"
-            data-lightbox="g"
-            data-title="
+
+
+
+
+
+
+
+        <!-- 需要第二排就繼續貼 -->
+        <div class="card"><a class="card-link" data-lightbox="g" data-title="
             <strong class='lb-title'>G1｜賽博龐克風</strong>
             <span class='lb-label'>畫風（中文）：</span><span class='lb-text'>賽博龐克風</span><br>
             <span class='lb-label'>畫風關鍵詞（英文）：</span><span class='lb-text'> Cyberpunk Style</span><br>
             <span class='lb-label'>注意事項：</span><span class='lb-text'> 霓虹、高科技</span><br>
             <span class='lb-label'>Prompt 建議：</span><span class='lb-text'> neon lights, futuristic city</span><br>
             <span class='lb-label'>Negative：</span><span class='lb-text'> pastel cute</span>
-            ">        
-            <img src="../images/g1.jpg" alt="G1｜賽博龐克風">
-            <div class="cap">G1｜賽博龐克風</div>
-        </a>
+            " href="./images/g1.jpg"><img alt="G1｜賽博龐克風" src="./images/g1.jpg" /></a>
+          <div class="cap">G1｜賽博龐克風</div>
+          <p class="desc">用「賽博龐克風格」呈現，充滿霓虹燈和高科技感的賽博龐克風格，色調偏藍紫冷光，背景是未來城市。</p>
 
-        <a class="card"
-            href="../images/g2.jpg"
-            data-lightbox="g"
-            data-title="
+        </div>
+        <div class="card"><a class="card-link" data-lightbox="g" data-title="
             <strong class='lb-title'>G2｜像素藝術</strong>
             <span class='lb-label'>畫風（中文）：</span><span class='lb-text'>像素藝術</span><br>
             <span class='lb-label'>畫風關鍵詞（英文）：</span><span class='lb-text'> Pixel Art</span><br>
             <span class='lb-label'>注意事項：</span><span class='lb-text'> 格子感</span><br>
             <span class='lb-label'>Prompt 建議：</span><span class='lb-text'> 8-bit, pixel grid</span><br>
             <span class='lb-label'>Negative：</span><span class='lb-text'> smooth shading</span>
-            ">        
-            <img src="../images/g2.jpg" alt="G2｜像素藝術">
-            <div class="cap">G2｜像素藝術</div>
-        </a>
-
-        <a class="card"
-            href="../images/g3.jpg"
-            data-lightbox="g"
-            data-title="
-            <strong class='lb-title'>G1｜日式版畫</strong>
+            " href="./images/g2.jpg"><img alt="G2｜像素藝術" src="./images/g2.jpg" /></a>
+          <div class="cap">G2｜像素藝術</div>
+          <p class="desc">用「像素藝術風格」呈現，像復古電玩那樣的像素風格，不要平滑處理。</p>
+        </div>
+        <div class="card"><a class="card-link" data-lightbox="g" data-title="
+            <strong class='lb-title'>G3｜日式版畫</strong>
             <span class='lb-label'>畫風（中文）：</span><span class='lb-text'>日式版畫</span><br>
             <span class='lb-label'>畫風關鍵詞（英文）：</span><span class='lb-text'> Ukiyo-e</span><br>
             <span class='lb-label'>注意事項：</span><span class='lb-text'> 平面構圖</span><br>
             <span class='lb-label'>Prompt 建議：</span><span class='lb-text'> japanese woodblock, flat color</span><br>
             <span class='lb-label'>Negative：</span><span class='lb-text'> 3D lighting</span>
-            ">        
-            <img src="../images/g3.jpg" alt="G1｜日式版畫">
-            <div class="cap">G1｜日式版畫</div>
-        </a>
-
-        <a class="card"
-            href="../images/g4.jpg"
-            data-lightbox="g"
-            data-title="
+            " href="./images/g3.jpg"><img alt="G3｜日式版畫" src="./images/g3.jpg" /></a>
+          <div class="cap">G3｜日式浮世繪版畫</div>
+          <p class="desc">日本傳統浮世繪版畫的風格，線條和上色方式很有日本古畫的味道。</p>
+        </div>
+        <div class="card"><a class="card-link" data-lightbox="g" data-title="
             <strong class='lb-title'>G4｜油畫風</strong>
             <span class='lb-label'>畫風關鍵詞（英文）：</span><span class='lb-text'> Oil Painting Style</span><br>
             <span class='lb-label'>注意事項：</span><span class='lb-text'> 筆觸厚重</span><br>
             <span class='lb-label'>Prompt 建議：</span><span class='lb-text'> traditional oil painting, heavy impasto, thick layered paint,very visible brush strokes, expressive painterly texture,canvas texture, hand-painted fine art,edges softened by brush, slight abstraction,museum quality oil painting, rich pigments, dramatic lighting,painter over realism, not photorealistic</span><br>
             <span class='lb-label'>Negative：</span><span class='lb-text'> photorealistic, digital painting, smooth shading, CGI, 3D render,vector art, illustration, anime, cartoon, ultra sharp,clean edges, perfect details</span>
-            ">        
-            <img src="../images/g4.jpg" alt="G4｜油畫風">
-            <div class="cap">G4｜油畫風</div>
-        </a>
-
-        <a class="card"
-            href="../images/g5.jpg"
-            data-lightbox="g"
-            data-title="
+            " href="./images/g4.jpg"><img alt="G4｜油畫風" src="./images/g4.jpg" /></a>
+          <div class="cap">G4｜油畫風</div>
+          <p class="desc">用「傳統油畫風格」呈現，像古典油畫那樣，筆觸明顯，顏料厚實，允許畫面失真與筆刷痕跡，看得到厚重的顏料筆觸和畫布的質感。</p>
+        </div>
+        <div class="card"><a class="card-link" data-lightbox="g" data-title="
             <strong class='lb-title'>G5｜Low Poly</strong>
             <span class='lb-label'>畫風（中文）：</span><span class='lb-text'>Low Poly</span><br>
             <span class='lb-label'>畫風關鍵詞（英文）：</span><span class='lb-text'> Low Poly 3D</span><br>
             <span class='lb-label'>注意事項：</span><span class='lb-text'> 幾何感</span><br>
             <span class='lb-label'>Prompt 建議：</span><span class='lb-text'> polygon shapes</span><br>
             <span class='lb-label'>Negative：</span><span class='lb-text'> smooth realism</span>
-            ">        
-            <img src="../images/g5.jpg" alt="G5｜Low Poly">
-            <div class="cap">G5｜Low Poly</div>
-        </a>
-
-        <a class="card"
-            href="../images/g6.jpg"
-            data-lightbox="g"
-            data-title="
+            " href="./images/g5.jpg"><img alt="G5｜Low Poly" src="./images/g5.jpg" /></a>
+          <div class="cap">G5｜Low Poly</div>
+          <p class="desc">以「低多邊形風格」呈現，用很多幾何三角形組成的3D風格，看起來有稜有角的，像摺紙一樣。</p>
+        </div>
+        <div class="card"><a class="card-link" data-lightbox="g" data-title="
             <strong class='lb-title'>G6｜紙雕風</strong>
             <span class='lb-label'>畫風（中文）：</span><span class='lb-text'>紙雕風</span><br>
             <span class='lb-label'>畫風關鍵詞（英文）：</span><span class='lb-text'> Paper Cutout Style</span><br>
             <span class='lb-label'>注意事項：</span><span class='lb-text'> 紙層陰影</span><br>
             <span class='lb-label'>Prompt 建議：</span><span class='lb-text'> layered paper, shadow</span><br>
             <span class='lb-label'>Negative：</span><span class='lb-text'> glossy texture</span>
-            ">        
-            <img src="../images/g6.jpg" alt="G6｜紙雕風">
-            <div class="cap">G6｜紙雕風</div>
-        </a>
-
-        <a class="card"
-            href="../images/g7.jpg"
-            data-lightbox="g"
-            data-title="
+            " href="./images/g6.jpg"><img alt="G6｜紙雕風" src="./images/g6.jpg" /></a>
+          <div class="cap">G6｜紙雕風</div>
+          <p class="desc">以「紙雕風」呈現，模仿多層紙張疊在一起剪出來的效果，有紙張的陰影和層次感。</p>
+        </div>
+        <div class="card"><a class="card-link" data-lightbox="g" data-title="
             <strong class='lb-title'>G7｜黏土風</strong>
             <span class='lb-label'>畫風（中文）：</span><span class='lb-text'>黏土風</span><br>
             <span class='lb-label'>畫風關鍵詞（英文）：</span><span class='lb-text'> Claymation Style</span><br>
             <span class='lb-label'>注意事項：</span><span class='lb-text'> 黏土質感</span><br>
             <span class='lb-label'>Prompt 建議：</span><span class='lb-text'> clay texture, handmade</span><br>
             <span class='lb-label'>Negative：</span><span class='lb-text'> smooth plastic</span>
-            ">        
-            <img src="../images/g7.jpg" alt="G7｜黏土風">
-            <div class="cap">G7｜黏土風</div>
-        </a>
-
-
-
-
-        <!-- 需要第二排就繼續貼 -->
+            " href="./images/g7.jpg"><img alt="G7｜黏土風" src="./images/g7.jpg" /></a>
+          <div class="cap">G7｜黏土風</div>
+          <p class="desc">以「黏土風」呈現，看起來像用黏土捏出來的動畫角色，表面有黏土的質感和手工痕跡。</p>
+        </div>
       </div>
-
-    
-
     </div>
-    </section>
-
+  </section>
   <!-- 頁尾（預留空間放個人資訊） -->
   <footer class="footer">
     <div class="container">
@@ -217,12 +217,10 @@
       </div>
     </div>
   </footer>
-   <!-- ✅ 1) 先載入 jQuery（Lightbox2 常需要） -->
+  <!-- ✅ 1) 先載入 jQuery（Lightbox2 常需要） -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-
   <!-- ✅ 2) 再載入 Lightbox2 -->
   <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
-
   <!-- ✅ 3) 可選：讓體驗更像展覽 -->
   <script>
     if (window.lightbox) {
@@ -235,7 +233,7 @@
     }
 
     if (window.lightbox) {
-    lightbox.option({
+      lightbox.option({
         resizeDuration: 200,
         fadeDuration: 200,
         imageFadeDuration: 200,
@@ -245,10 +243,9 @@
         /* 核心重點 */
         maxWidth: 800,
         maxHeight: 500
-    });
+      });
     }
-</script>
-
+  </script>
 </body>
-</html>
 
+</html>
