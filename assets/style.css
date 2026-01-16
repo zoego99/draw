@@ -133,11 +133,17 @@ body{
 }
 
 .card:hover img{
-  transform:scale(1.03);
+  transform:scale(1.1);
 }
+.card a{overflow: hidden;}
 
 .card .cap{
-  padding:10px 12px 12px;
+  padding:10px 12px 5px;
+  color:var(--muted);
+  font-size:13px;
+}
+.card .desc{
+  padding:0px 12px 5px;
   color:var(--muted);
   font-size:13px;
 }
