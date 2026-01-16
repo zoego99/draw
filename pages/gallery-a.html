@@ -1,15 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="zh-Hant">
+
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>A. 寫實</title>
-
-  <link rel="stylesheet" href="../assets/style.css" />
-
+  <link href="../assets/style.css" rel="stylesheet" />
   <!-- Lightbox2（CDN） -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" />
-  <link rel="stylesheet" href="../assets/lightbox.css">
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
+  <link href="../assets/lightbox.css" rel="stylesheet" />
+  <style data-added="card-link">
+    /* added: make image link behave like the old .card anchor */
+    .card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
 </head>
 
 <body>
@@ -28,90 +36,75 @@
       </div>
     </div>
   </div>
-
-
   <!-- 上方大區塊（如附圖2 上半部留空區） -->
   <section class="hero">
     <div class="container">
       <div class="box">
         <h1>A. 寫實攝影與寫實渲染</h1>
-        <p>Photorealism & Realistic Rendering</p>
+        <p>Photorealism &amp; Realistic Rendering</p>
         <dl>
           <dt>特徵：</dt>
-          <dd>追求「像照片一樣真實」，強調光線、陰影、材質、鏡頭語言（景深、焦段）、構圖與細節。<br>AI 會以「攝影」或「CG 擬真」方式來理解，而不是插畫。</dd>
+          <dd>追求「像照片一樣真實」，強調光線、陰影、材質、鏡頭語言（景深、焦段）、構圖與細節。<br />AI 會以「攝影」或「CG 擬真」方式來理解，而不是插畫。</dd>
           <dt>用途：</dt>
           <dd>產品圖、建築視覺、城市景觀、動物、人像、廣告視覺、品牌形象、寫實情境模擬。</dd>
         </dl>
       </div>
-
       <div class="section-line"></div>
-
       <!-- 下方一排（或多排）縮圖：桌機固定 4 欄 -->
       <div class="grid">
         <!-- 一張圖 = 一個卡片 -->
-        <a class="card"
-            href="../images/a1.jpg"
-            data-lightbox="a"
-            data-title="
+
+
+
+
+        <!-- 需要第二排就繼續貼 -->
+        <div class="card"><a class="card-link" data-lightbox="a" data-title="
             <strong class='lb-title'>A1｜攝影風格寫實</strong>
-            <span class='lb-label'>畫風（中文）：</span><span class='lb-text'> 攝影風格寫實</span><br>
+            <span class='lb-label'>畫風（中文）：</span><span class='lb-text'> 像真實相機拍攝的照片風格，光線很自然，細節很真實。</span><br>
             <span class='lb-label'>畫風關鍵詞（英文）：</span><span class='lb-text'> Photography, Photorealistic</span><br>
             <span class='lb-label'>注意事項：</span><span class='lb-text'> 要讓 AI 知道是「照片」，不是插畫</span><br>
             <span class='lb-label'>Prompt 建議：</span><span class='lb-text'> DSLR photo, natural lighting, realistic skin texture</span><br>
             <span class='lb-label'>Negative：</span><span class='lb-text'> illustration, cartoon, painting, anime</span>
-            ">        
-            <img src="../images/a1.jpg" alt="A4｜攝影風格寫實">
-            <div class="cap">A1｜攝影風格寫實</div>
-        </a>
-        <a class="card"
-            href="../images/a2.jpg"
-            data-lightbox="a"
-            data-title="
+            " href="../images/a1.jpg"><img alt="A4｜攝影風格寫實" src="../images/a1.jpg" /></a>
+          <div class="cap">A1｜攝影風格寫實</div>
+          <div class="desc">像真實相機拍攝的照片風格，光線很自然，細節很真實。</div>
+        </div>
+        <div class="card"><a class="card-link" data-lightbox="a" data-title="
             <strong class='lb-title'>A2｜野生動物攝影風</strong>
-            <span class='lb-label'>畫風（中文）：</span><span class='lb-text'> 野生動物攝影風</span><br>
+            <span class='lb-label'>畫風（中文）：</span><span class='lb-text'> 像是國家地理頻道那種野生動物照片，連毛髮都很清楚，光線自然。</span><br>
             <span class='lb-label'>畫風關鍵詞（英文）：</span><span class='lb-text'> National Geographic Style, Wildlife Photography</span><br>
             <span class='lb-label'>注意事項：</span><span class='lb-text'> 需要動物毛髮細節、自然光</span><br>
             <span class='lb-label'>Prompt 建議：</span><span class='lb-text'> telephoto lens, shallow depth of field, high detailed fur</span><br>
             <span class='lb-label'>Negative：</span><span class='lb-text'> cartoon animal, 3d character, low detail</span>
-            ">        
-            <img src="../images/a2.jpg" alt="A2｜野生動物攝影風">
-            <div class="cap">A2｜野生動物攝影風</div>
-        </a> 
-        <a class="card"
-            href="../images/a3.jpg"
-            data-lightbox="a"
-            data-title="
+            " href="../images/a2.jpg"><img alt="A2｜野生動物攝影風" src="../images/a2.jpg" /></a>
+          <div class="cap">A2｜野生動物攝影風</div>
+          <div class="desc">像是國家地理頻道那種野生動物照片，連毛髮都很清楚，光線自然。</div>
+        </div>
+        <div class="card"><a class="card-link" data-lightbox="a" data-title="
             <strong class='lb-title'>A3｜建築視覺渲染</strong>
-            <span class='lb-label'>畫風（中文）：</span><span class='lb-text'> 建築視覺渲染</span><br>
+            <span class='lb-label'>畫風（中文）：</span><span class='lb-text'> 像建築雜誌裡的城市或建築照片。</span><br>
             <span class='lb-label'>畫風關鍵詞（英文）：</span><span class='lb-text'> Architectural Rendering, Photorealistic</span><br>
             <span class='lb-label'>注意事項：</span><span class='lb-text'> 常用於建築、城市景觀</span><br>
             <span class='lb-label'>Prompt 建議：</span><span class='lb-text'> wide angle, architectural visualization, 8k, ultra realistic</span><br>
             <span class='lb-label'>Negative：</span><span class='lb-text'> cartoon building, low poly, sketch</span>
-            ">        
-            <img src="../images/a3.jpg" alt="A3｜建築視覺渲染">
-            <div class="cap">A4｜攝影風格寫實</div>
-        </a>
-        <a class="card"
-            href="../images/a4.jpg"
-            data-lightbox="a"
-            data-title="
+            " href="../images/a3.jpg"><img alt="A3｜建築視覺渲染" src="../images/a3.jpg" /></a>
+          <div class="cap">A3｜建築視覺渲染</div>
+          <div class="desc">像建築雜誌裡的城市或建築照片。</div>
+        </div>
+        <div class="card"><a class="card-link" data-lightbox="a" data-title="
             <strong class='lb-title'>A4｜電影分鏡寫實</strong>
-            <span class='lb-label'>畫風（中文）：</span><span class='lb-text'> 電影分鏡寫實</span><br>
+            <span class='lb-label'>畫風（中文）：</span><span class='lb-text'> 像電影畫面一樣的照片，光影對比比較強烈，有故事感。</span><br>
             <span class='lb-label'>畫風關鍵詞（英文）：</span><span class='lb-text'> Cinematic, Film Still, Photorealistic</span><br>
             <span class='lb-label'>注意事項：</span><span class='lb-text'> 偏電影構圖與情緒</span><br>
             <span class='lb-label'>Prompt 建議：</span><span class='lb-text'> cinematic lighting, dramatic shadow, movie still</span><br>
             <span class='lb-label'>Negative：</span><span class='lb-text'> flat lighting, cartoon style, low contrast</span>
-            ">        
-            <img src="../images/a4.jpg" alt="A4｜電影分鏡寫實">
-            <div class="cap">A4｜電影分鏡寫實</div>
-        </a>
-
-
-        <!-- 需要第二排就繼續貼 -->
+            " href="../images/a4.jpg"><img alt="A4｜電影分鏡寫實" src="../images/a4.jpg" /></a>
+          <div class="cap">A4｜電影分鏡寫實</div>
+          <div class="desc">像電影畫面一樣的照片，光影對比比較強烈，有故事感。</div>
+        </div>
       </div>
     </div>
   </section>
-
   <footer class="footer">
     <div class="container">
       <div class="box">
@@ -119,12 +112,10 @@
       </div>
     </div>
   </footer>
- <!-- ✅ 1) 先載入 jQuery（Lightbox2 常需要） -->
+  <!-- ✅ 1) 先載入 jQuery（Lightbox2 常需要） -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-
   <!-- ✅ 2) 再載入 Lightbox2 -->
   <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
-
   <!-- ✅ 3) 可選：讓體驗更像展覽 -->
   <script>
     if (window.lightbox) {
@@ -137,7 +128,7 @@
     }
 
     if (window.lightbox) {
-    lightbox.option({
+      lightbox.option({
         resizeDuration: 200,
         fadeDuration: 200,
         imageFadeDuration: 200,
@@ -147,8 +138,9 @@
         /* 核心重點 */
         maxWidth: 800,
         maxHeight: 500
-    });
+      });
     }
-</script>
+  </script>
 </body>
+
 </html>
